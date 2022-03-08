@@ -21,7 +21,6 @@ public class DmvSimulator {
 		for (int i = 1; i < 101; i++) {
 			if ((number + i) < 101) {
 				System.out.println(number + i + "!");
-
 				// pause to simulate wait at DMV
 				try {
 					java.util.concurrent.TimeUnit.SECONDS.sleep(2);
@@ -29,9 +28,9 @@ public class DmvSimulator {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
+
 			} else {
 				System.out.println(startOver++ + "!");
-
 				// pause to simulate wait at DMV
 				try {
 					java.util.concurrent.TimeUnit.SECONDS.sleep(2);
@@ -39,12 +38,13 @@ public class DmvSimulator {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
+
 			}
 		}
 
 		System.out.println(" ");
-		System.out.println(
-				"It looks like you do not have the required paperwork.\nPlease come back with the correct forms and go to the back of the line");
+		System.out.println("You don't have the necessary paperwork. Why are you wasting my time? " +
+				"\nYour entire life is a waste of time. Get outta here and never come back");
 	}
 
 }
