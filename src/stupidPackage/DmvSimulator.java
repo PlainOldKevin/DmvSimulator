@@ -18,8 +18,8 @@ public class DmvSimulator {
 		System.out.println(" ");
 
 		// call numbers
-		for (int i = 1; i < 101; i++) {
-			if ((number + i) < 101) {
+		for (int i = 1; i < 201; i++) {
+			if ((number + i) < 201) {
 				System.out.println(number + i + "!");
 
 				// pause to simulate wait at DMV
